@@ -6,6 +6,7 @@ on:
   push:
     tags:
       - "app-one-*"
+
 jobs:
   Deploy-Production:
     runs-on: ubuntu-latest
@@ -13,9 +14,20 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Install pnpm dependencies
-        uses: ./.github/actions/install-pnpm-dependencies
-        working-directory: ./packages/app-one
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 16
+
+      - name: Install pnpm
+        uses: pnpm/action-setup@v3
+        id: pnpm-install
+        with:
+          version: 8
+          run_install: false
+
+      - name: Install dependencies
+        run: pnpm install
 
       - name: Install Vercel CLI
         run: pnpm add --global vercel@latest
