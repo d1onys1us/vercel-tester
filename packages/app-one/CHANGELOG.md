@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.4.0](https://github.com/d1onys1us/vercel-tester/compare/app-one-v0.3.0...app-one-v0.4.0) (2024-02-19)
+
+
+### Features
+
+* **app-one:** ookok ([#18](https://github.com/d1onys1us/vercel-tester/issues/18)) ([bfb6aa1](https://github.com/d1onys1us/vercel-tester/commit/bfb6aa1fef3aebf8c9d609f10c9ca06f56f8f9e2))
+* **app-one:** this shouldnt land when we hotfix! ([#15](https://github.com/d1onys1us/vercel-tester/issues/15)) ([6a74b86](https://github.com/d1onys1us/vercel-tester/commit/6a74b8657bba041f1f8a6454fe81ed8919db569c))
+
 ## [0.3.0](https://github.com/d1onys1us/vercel-tester/compare/app-one-v0.2.0...app-one-v0.3.0) (2024-02-19)
 
 
