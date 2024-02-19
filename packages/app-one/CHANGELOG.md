@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.6.0](https://github.com/d1onys1us/vercel-tester/compare/app-one-v0.5.0...app-one-v0.6.0) (2024-02-19)
+
+
+### Features
+
+* **app-one:** add to prod ([#20](https://github.com/d1onys1us/vercel-tester/issues/20)) ([a82d609](https://github.com/d1onys1us/vercel-tester/commit/a82d609f06bee7a4e260ddc4710cc3a4a958c592))
+
 ## [0.5.0](https://github.com/d1onys1us/vercel-tester/compare/app-one-v0.4.0...app-one-v0.5.0) (2024-02-19)
 
 
