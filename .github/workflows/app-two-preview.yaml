@@ -30,16 +30,12 @@ jobs:
 
       - name: Install Vercel CLI
         run: pnpm add --global vercel@latest
-        working-directory: ./packages/app-two
 
       - name: Pull Vercel Environment Information
-        run: vercel pull --yes --environment=preview --token=${{ secrets.VERCEL_TOKEN }}
-        working-directory: ./packages/app-two
+        run: vercel pull --yes --environment=preview --token=${{ secrets.VERCEL_TOKEN }} --cwd=packages/app-two
 
       - name: Build Project Artifacts
         run: vercel build --token=${{ secrets.VERCEL_TOKEN }}
-        working-directory: ./packages/app-two
 
       - name: Deploy Project Artifacts to Vercel
         run: vercel deploy --prebuilt --token=${{ secrets.VERCEL_TOKEN }}
-        working-directory: ./packages/app-two
